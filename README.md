@@ -22,7 +22,7 @@ Some chao offsets obtained from Fusion's chao documentation.
 Providing me with information regarding how the Main calculates it's hashsum.
 #### Icons
 https://github.com/feathericons/feather#feather [License MIT]
-### Metro Framework
+#### Metro Framework
 https://github.com/dennismagno/metroframework-modern-ui [License MIT]
 
 Contact me on Discord for faster help: Froody#5824
