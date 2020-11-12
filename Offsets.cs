@@ -197,6 +197,7 @@ namespace SA2_Save_Converter
         public uint EggColour = 0xDC;
         public uint BodyType = 0xDD;
         public uint BodyTypeAnimal = 0xDE;
+        public uint SA2Medals = 0x108;
         public uint SA2AnimalBehaviours = 0x118;
         public uint SA2ArmsPart = 0x11C;
         public uint SA2EarsPart = 0x11D;

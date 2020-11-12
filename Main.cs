@@ -390,7 +390,7 @@ namespace SA2_Save_Converter
                         //Byte swap all individual chao and add to byte list.
                         foreach (byte[] chao in chaoList)
                         {
-                            if (saveConsole == 1) { byteList.AddRange(ChaoSave.ByteSwapChao(chao)); }
+                            if (saveConsole == 0) { byteList.AddRange(ChaoSave.ByteSwapChao(chao)); }
                             else { byteList.AddRange(chao); }
                         }
 
@@ -398,7 +398,7 @@ namespace SA2_Save_Converter
                         byteList.AddRange(loadedSave.Skip(0xFAA4).Take(0x55C).ToArray());
 
                         //Byte swap if we're converting from PC.
-                        if (saveConsole == 1) { byteList = ChaoSave.ByteSwapChaoWorld(byteList.ToArray()).ToList(); }
+                        if (saveConsole == 0) { byteList = ChaoSave.ByteSwapChaoWorld(byteList.ToArray()).ToList(); }
 
                         //Insert headers to byte list.
                         byteList.InsertRange(0x00, ChaoSave.GCNChaoHeader1);
