@@ -195,6 +195,8 @@ namespace SA2_Save_Converter
             byteArray.Reverse((int)offsets.chao.Tiredness, 2);
             byteArray.Reverse((int)offsets.chao.Boredom, 2);
             byteArray.Reverse((int)offsets.chao.Energy, 2);
+            byteArray.Reverse((int)offsets.chao.Lifespan1, 2);
+            byteArray.Reverse((int)offsets.chao.Lifespan2, 2);
             return byteArray.ToArray();
         }
 
