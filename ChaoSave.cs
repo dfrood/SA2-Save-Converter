@@ -200,7 +200,8 @@ namespace SA2_Save_Converter
             //Will fix undocumented values
             byteArray.Reverse((int)offsets.chao.Unk1, 4);
             byteArray.Reverse((int)offsets.chao.Unk2, 2);
-            byteArray.Reverse((int)offsets.chao.Unk3, 2);
+            //Do not reverse, breaks age
+            //byteArray.Reverse((int)offsets.chao.Unk3, 2);
             byteArray.Reverse((int)offsets.chao.Unk4, 4);
             byteArray.Reverse((int)offsets.chao.Unk5, 4);
             byteArray.Reverse((int)offsets.chao.Unk6, 4);
